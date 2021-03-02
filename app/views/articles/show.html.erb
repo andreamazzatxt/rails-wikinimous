@@ -1,0 +1,7 @@
+
+  <div class="border-bottom py-30">
+      <h2 ><%= @article.title %></h2>
+      <span><%= link_to 'Edit', edit_article_path(@article) %></span>
+      <span><%= link_to 'Delete', article_path(@article), method: :delete %></span>
+  </div>
+  <p class="my-20"><%= @article.content %></p>
